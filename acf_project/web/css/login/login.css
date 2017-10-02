@@ -1,0 +1,33 @@
+#body{
+    display: inline-block;
+}
+
+#acfLogo {
+    position: fixed;
+    top: 25%;
+    left: 52%;
+    margin-top: -50px;
+    margin-left: -100px;
+    max-width:10%;
+    height:auto;
+}
+
+#form {
+    width: 15%;
+    border-radius: 25px;
+    position: fixed;
+    top: 25%;
+    left: 53%;
+    margin-top: 12%;
+    margin-left: -10.5%;
+
+}
+
+#form input{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
