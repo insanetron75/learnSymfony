@@ -11,11 +11,12 @@
 {% endblock %}
 
 {% block body %}
-    <div id="loginForm">
-        <img id="acfLogo" src="{{ asset('images/ACF_Logo.png') }}">
-        <form id="form" action="login.php">
-            <input type="text" id="username" size="20" maxlength="20" placeholder="Username">
-            <input type="submit" id="submit" value="Login">
-        </form>
-    </div>
+    {% for user in users %}
+        <ul>
+            {% for col in user %}
+                <li>col</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    {{ usersId }}
 {% endblock %}

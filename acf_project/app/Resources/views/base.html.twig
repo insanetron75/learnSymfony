@@ -6,13 +6,51 @@
 
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/font-awesome.min.css') }}">
     {% endblock %}
-    <link rel="icon" type="image/png" href="{{ asset('images/ACF_Logo.png') }}" />
 </head>
 <body>
 
 <div class="main-content">
-    {% block body %}{% endblock %}
+    {% block body %}
+        <div id="navDiv">
+            <nav>
+                <ul class="topLinks">
+                    <li><a href=" {{  path('home_page') }}">Home</a></li>
+                    <li><a href="#">Personnel</a>
+                        <ul>
+                            <li><a href="#">Instructors</a></li>
+                            <li><a href="#">Cadets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Training Programs</a>
+                        <ul>
+                            <li><a href="">New Training Program</a></li>
+                            <li><a href="#">Current Training Programs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Syllabus</a>
+                        <ul>
+                            <li><a href="#">Fieldcraft</a></li>
+                            <li><a href="#">Navigation</a></li>
+                            <li><a href="#">Drill</a></li>
+                            <li><a href="#">SAA</a></li>
+                            <li><a href="#">First Aid</a></li>
+                            <li><a href="#">Expedition</a></li>
+                        </ul>
+                    </li>
+                    <li class="loginLink">
+                        {% if is_granted('ROLE_USER') %}
+                            <a href="{{ path('security_logout') }}">Logout <span class="fa fa-lock"></span></a>
+                        {% else %}
+                            <a href="{{ path('security_login') }}">Login <span class="fa fa-lock"></span></a>
+                        {% endif %}
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    {% endblock %}
 </div>
 
 <div class="footer">

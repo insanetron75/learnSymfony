@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ parent() }}
+
+<div id="userInfo">
+    <h1><b><u>User Details</u></b></h1>
+    <div class='detailsDiv' id="userDetails">
+        <div id="numberDiv">
+            <label class="usrLbl" id="numberLbl">Number: </label>
+            <label id="number"></label>
+        </div>
+        <div id="rankDiv">
+            <label class="usrLbl" id="rankLbl">Rank: </label>
+            <label id="rank"></label>
+        </div>
+        <div id="firtNameDiv">
+            <label class="usrLbl" id="firstNameLbl">First Name: </label>
+            <label id="firstName"></label>
+        </div>
+        <div id="lastNameDiv">
+            <label class="usrLbl" id="lastNameLbl">Last Name: </label>
+            <label id="lastName"></label>
+        </div>
+        <div id="battalionDiv">
+            <label class="usrLbl" id="battalionLbl">Battalion: </label>
+            <label id="battalion"></label>
+        </div>
+        <div id="coyDiv">
+            <label class="usrLbl" id="companyLbl">Company: </label>
+            <label id="company"></label>
+        </div>
+        <div id="detDiv">
+            <label class="usrLbl" id="detachmentLbl">Detachment: </label>
+            <label id="detachment"></label>
+        </div>
+    </div>
+</div>
+{% endblock %}
