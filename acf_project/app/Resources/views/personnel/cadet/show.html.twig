@@ -27,8 +27,11 @@
                     <td>{{ cadet['Detachment'] }}</td>
                     <td>{{ cadet['Company'] }}</td>
                     <td>
-                        <a href="{{ path('admin_cadet_edit', {'id': cadet['id']}) }}" class="btn btn-xs btn-success"><span class="fa fa-pencil"></span></a>
-                        <a href="{{ path('admin_cadet_delete', {'id': cadet['id']}) }}" class="btn btn-xs btn-danger"><span class="fa fa-close"></span></a>
+                        <a href="{{ path('admin_cadet_edit', {'id': cadet['id']}) }}"
+                           class="btn btn-xs btn-success"><span class="fa fa-pencil"></span></a>
+                        <a href="{{ path('admin_cadet_delete', {'id': cadet['id']}) }}"
+                           onclick="return confirm('Are you sure?')"
+                           class="btn btn-xs btn-danger"><span class="fa fa-close"></span></a>
                     </td>
                 </tr>
             {% endfor %}

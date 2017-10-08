@@ -27,8 +27,16 @@
                     <td>{{ instructor['Detachment'] }}</td>
                     <td>{{ instructor['Company'] }}</td>
                     <td>
-                        <a href="{{ path('admin_instructor_edit', {'id': instructor['id']}) }}" class="btn btn-xs btn-success"><span class="fa fa-pencil"></span></a>
-                        <a href="{{ path('admin_instructor_delete', {'id': instructor['id']}) }}" class="btn btn-xs btn-danger"><span class="fa fa-close"></span></a>
+                        <a href="{{ path('admin_instructor_edit', {'id': instructor['id']}) }}"
+                           class="btn btn-xs btn-success"><span
+                                    title="View" class="fa fa-info-circle"></span></a>
+                        <a href="{{ path('admin_instructor_edit', {'id': instructor['id']}) }}"
+                           class="btn btn-xs btn-warning"><span
+                                    title="Edit" class="fa fa-pencil"></span></a>
+                        <a href="{{ path('admin_instructor_delete', {'id': instructor['id']}) }}"
+                           onclick="return confirm('Are you sure?')"
+                           class="btn btn-xs btn-danger"><span
+                                    title="Delete" class="fa fa-close"></span></a>
                     </td>
                 </tr>
             {% endfor %}
