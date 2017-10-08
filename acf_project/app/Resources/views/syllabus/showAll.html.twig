@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/syllabus/syllabus.css') }}">
+{% endblock %}
+{% block body %}
+    {{ parent() }}
+
+    <div class="page-title">
+        <h1><u>{{ title }}</u></h1>
+    </div>
+    <div class="syllabus-container">
+        {% for subject in syllabus %}
+            <h2 class="">
+                <button
+                        class="btn-xs btn-success fa fa-expand"
+                        style="margin-left: 1%"
+                        data-toggle="collapse"
+                        data-target="#{{ subject['url'] }}">
+                </button>
+                {{ subject['title'] }}
+            </h2>
+            <div id="{{ subject['url'] }}" class="collapse">
+                <table class="syllabus-table table">
+                    <tr>
+                        {% for heading in subject['lessons']['headings'] %}
+                            <th>{{ heading }}</th>
+                        {% endfor %}
+                    </tr>
+                    {% for lesson in subject['lessons']['lessons'] %}
+                        <tr>
+                            <td>{{ lesson['Ser'] }}</td>
+                            <td>{{ lesson['Title'] }}</td>
+                            <td>{{ lesson['Sub Title'] }}</td>
+                            <td>{{ lesson['Chapter'] }}</td>
+                            <td>{{ lesson['Section'] }}</td>
+                            <td>{{ lesson['Star Level'] }}</td>
+                            <td>{{ lesson['No. Of Periods'] }}</td>
+                            <td align="center">
+                                <a href="{{ path('admin_cadet_edit',{'id': lesson['id']}) }}" class="btn btn-xs btn-primary">
+                                    <span class="fa fa-plus"></span>
+                                </a>
+                                <a href="{{ path('admin_cadet_edit',{'id': lesson['id']}) }}" class="btn btn-xs btn-success">
+                                    <span class="fa fa-folder"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

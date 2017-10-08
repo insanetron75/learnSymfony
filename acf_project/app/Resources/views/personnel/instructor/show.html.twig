@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/instructor/instructor.css') }}">
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="instructor-container">
+        <div class="pull-right">
+            <a href="{{ path('admin_instructor_new') }}" class="btn btn-primary pull-right">Add <span class="fa fa-plus-circle"></span></a>
+        </div>
+        <h1 class="page-title">{{ title }}:</h1>
+        <table class="instructor-table table">
+            <tr>
+                {% for heading in instructors['headings'] %}
+                    <th>{{ heading }}</th>
+                {% endfor %}
+            </tr>
+            {% for instructor in instructors['instructors'] %}
+                <tr>
+                    <td>{{ instructor['Number'] }}</td>
+                    <td>{{ instructor['Rank'] }}</td>
+                    <td>{{ instructor['First Name'] }}</td>
+                    <td>{{ instructor['Last Name'] }}</td>
+                    <td>{{ instructor['Detachment'] }}</td>
+                    <td>{{ instructor['Company'] }}</td>
+                    <td>
+                        <a href="{{ path('admin_instructor_edit', {'id': instructor['id']}) }}" class="btn btn-xs btn-success"><span class="fa fa-pencil"></span></a>
+                        <a href="{{ path('admin_instructor_delete', {'id': instructor['id']}) }}" class="btn btn-xs btn-danger"><span class="fa fa-close"></span></a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

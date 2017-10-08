@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/cadet/cadet.css') }}">
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="cadet-container">
+        <div class="pull-right">
+            <a href="{{ path('admin_cadet_new') }}" class="btn btn-primary pull-right">Add <span class="fa fa-plus-circle"></span></a>
+        </div>
+        <h1 class="page-title">{{ title }}:</h1>
+        <table class="cadet-table table">
+            <tr>
+                {% for heading in cadets['headings'] %}
+                    <th>{{ heading }}</th>
+                {% endfor %}
+            </tr>
+            {% for cadet in cadets['cadets'] %}
+                <tr>
+                    <td>{{ cadet['Rank'] }}</td>
+                    <td>{{ cadet['First Name'] }}</td>
+                    <td>{{ cadet['Last Name'] }}</td>
+                    <td>{{ cadet['Star Level'] }}</td>
+                    <td>{{ cadet['Detachment'] }}</td>
+                    <td>{{ cadet['Company'] }}</td>
+                    <td>
+                        <a href="{{ path('admin_cadet_edit', {'id': cadet['id']}) }}" class="btn btn-xs btn-success"><span class="fa fa-pencil"></span></a>
+                        <a href="{{ path('admin_cadet_delete', {'id': cadet['id']}) }}" class="btn btn-xs btn-danger"><span class="fa fa-close"></span></a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

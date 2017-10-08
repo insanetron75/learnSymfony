@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Instructor" table="instructor">
+    <indexes>
+      <index name="idx_instructor" columns="instructor_qualifications_id"/>
+      <index name="idx_instructor_0" columns="detachment_id"/>
+      <index name="idx_instructor_1" columns="contact_infomration_id"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="firstName" type="string" column="first_name" length="45" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="lastName" type="string" column="last_name" length="45" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="rank" type="string" column="rank" length="45" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="number" type="integer" column="number" nullable="false">
+      <options>
+        <option name="unsigned">1</option>
+      </options>
+    </field>
+    <many-to-one field="detachment" target-entity="Detachment" fetch="LAZY">
+      <join-columns>
+        <join-column name="detachment_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="instructorQualifications" target-entity="ContactInformation" fetch="LAZY">
+      <join-columns>
+        <join-column name="instructor_qualifications_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="contactInfomration" target-entity="ContactInformation" fetch="LAZY">
+      <join-columns>
+        <join-column name="contact_infomration_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

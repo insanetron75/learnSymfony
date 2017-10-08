@@ -2,18 +2,27 @@
 
 namespace AppBundle\Entity;
 
+use AppBundle\Tools\User\Tools;
 use Doctrine\ORM\Mapping as ORM;
-use AppBundle\Entity\Instructor;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * User
  *
- * @ORM\Table(name="user", uniqueConstraints={@ORM\UniqueConstraint(name="user_name_UNIQUE", columns={"user_name"})}, indexes={@ORM\Index(name="users_instructors_id_fk", columns={"instructor_id"})})
+ * @ORM\Table(name="user", uniqueConstraints={@ORM\UniqueConstraint(name="user_name_UNIQUE", columns={"user_name"})}, indexes={@ORM\Index(name="fk_user", columns={"instructor_id"})})
  * @ORM\Entity
  */
 class User implements UserInterface
 {
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
     /**
      * @var string
      *
@@ -31,23 +40,56 @@ class User implements UserInterface
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\Column(name="det_commander", type="integer", nullable=true)
      */
-    private $id;
+    private $detCommander;
 
     /**
-     * @var \AppBundle\Entity\Instructor
+     * @var integer
      *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Instructor")
+     * @ORM\Column(name="det_2ic", type="integer", nullable=true)
+     */
+    private $det2ic;
+
+    /**
+     * @var \Instructor
+     *
+     * @ORM\ManyToOne(targetEntity="Instructor")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="instructor_id", referencedColumnName="id")
      * })
      */
     private $instructor;
 
+
+
     /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set userName
+     *
+     * @param string $userName
+     *
+     * @return User
+     */
+    public function setUserName($userName)
+    {
+        $this->userName = $userName;
+
+        return $this;
+    }
+
+    /**
+     * Get userName
+     *
      * @return string
      */
     public function getUserName()
@@ -56,14 +98,22 @@ class User implements UserInterface
     }
 
     /**
-     * @param string $userName
+     * Set password
+     *
+     * @param string $password
+     *
+     * @return User
      */
-    public function setUserName($userName)
+    public function setPassword($password)
     {
-        $this->userName = $userName;
+        $this->password = $password;
+
+        return $this;
     }
 
     /**
+     * Get password
+     *
      * @return string
      */
     public function getPassword()
@@ -72,59 +122,95 @@ class User implements UserInterface
     }
 
     /**
-     * @param string $password
+     * Set detCommander
+     *
+     * @param integer $detCommander
+     *
+     * @return User
      */
-    public function setPassword($password)
+    public function setDetCommander($detCommander)
     {
-        $this->password = $password;
+        $this->detCommander = $detCommander;
+
+        return $this;
     }
 
     /**
-     * @return int
+     * Get detCommander
+     *
+     * @return integer
      */
-    public function getId()
+    public function getDetCommander()
     {
-        return $this->id;
+        return $this->detCommander;
     }
 
     /**
-     * @param int $id
+     * Set det2ic
+     *
+     * @param integer $det2ic
+     *
+     * @return User
      */
-    public function setId($id)
+    public function setDet2ic($det2ic)
     {
-        $this->id = $id;
+        $this->det2ic = $det2ic;
+
+        return $this;
     }
 
     /**
-     * @return Instructor
+     * Get det2ic
+     *
+     * @return integer
+     */
+    public function getDet2ic()
+    {
+        return $this->det2ic;
+    }
+
+    /**
+     * Set instructor
+     *
+     * @param \AppBundle\Entity\Instructor $instructor
+     *
+     * @return User
+     */
+    public function setInstructor(\AppBundle\Entity\Instructor $instructor = null)
+    {
+        $this->instructor = $instructor;
+
+        return $this;
+    }
+
+    /**
+     * Get instructor
+     *
+     * @return \AppBundle\Entity\Instructor
      */
     public function getInstructor()
     {
         return $this->instructor;
     }
 
-    /**
-     * @param Instructor $instructor
-     */
-    public function setInstructor($instructor)
-    {
-        $this->instructor = $instructor;
-    }
-
     public function getRoles()
     {
-        return ['ROLE_USER'];
+        $roles = Tools::getRolesForUser($this);
+        // give everyone ROLE_USER!
+        if (!in_array('ROLE_USER', $roles)) {
+            $roles[] = 'ROLE_USER';
+        }
+
+        return $roles;
     }
 
     public function getSalt()
     {
-
+        // TODO: Implement getSalt() method.
     }
 
     public function eraseCredentials()
     {
-
+        // TODO: Implement eraseCredentials() method.
     }
-
 }
-

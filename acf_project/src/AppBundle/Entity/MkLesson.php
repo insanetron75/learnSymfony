@@ -13,6 +13,15 @@ use Doctrine\ORM\Mapping as ORM;
 class MkLesson
 {
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=125, nullable=true)
@@ -48,18 +57,9 @@ class MkLesson
     private $subTitle;
 
     /**
-     * @var integer
+     * @var \Syllabus
      *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $id;
-
-    /**
-     * @var \AppBundle\Entity\Syllabus
-     *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Syllabus")
+     * @ORM\ManyToOne(targetEntity="Syllabus")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="syllabus_id", referencedColumnName="id")
      * })
@@ -67,5 +67,158 @@ class MkLesson
     private $syllabus;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return MkLesson
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set chatper
+     *
+     * @param string $chatper
+     *
+     * @return MkLesson
+     */
+    public function setChatper($chatper)
+    {
+        $this->chatper = $chatper;
+
+        return $this;
+    }
+
+    /**
+     * Get chatper
+     *
+     * @return string
+     */
+    public function getChatper()
+    {
+        return $this->chatper;
+    }
+
+    /**
+     * Set section
+     *
+     * @param string $section
+     *
+     * @return MkLesson
+     */
+    public function setSection($section)
+    {
+        $this->section = $section;
+
+        return $this;
+    }
+
+    /**
+     * Get section
+     *
+     * @return string
+     */
+    public function getSection()
+    {
+        return $this->section;
+    }
+
+    /**
+     * Set noOfPeriods
+     *
+     * @param integer $noOfPeriods
+     *
+     * @return MkLesson
+     */
+    public function setNoOfPeriods($noOfPeriods)
+    {
+        $this->noOfPeriods = $noOfPeriods;
+
+        return $this;
+    }
+
+    /**
+     * Get noOfPeriods
+     *
+     * @return integer
+     */
+    public function getNoOfPeriods()
+    {
+        return $this->noOfPeriods;
+    }
+
+    /**
+     * Set subTitle
+     *
+     * @param string $subTitle
+     *
+     * @return MkLesson
+     */
+    public function setSubTitle($subTitle)
+    {
+        $this->subTitle = $subTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get subTitle
+     *
+     * @return string
+     */
+    public function getSubTitle()
+    {
+        return $this->subTitle;
+    }
+
+    /**
+     * Set syllabus
+     *
+     * @param \AppBundle\Entity\Syllabus $syllabus
+     *
+     * @return MkLesson
+     */
+    public function setSyllabus(\AppBundle\Entity\Syllabus $syllabus = null)
+    {
+        $this->syllabus = $syllabus;
+
+        return $this;
+    }
+
+    /**
+     * Get syllabus
+     *
+     * @return \AppBundle\Entity\Syllabus
+     */
+    public function getSyllabus()
+    {
+        return $this->syllabus;
+    }
+}

@@ -13,6 +13,15 @@ use Doctrine\ORM\Mapping as ORM;
 class DrillLesson
 {
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=125, nullable=true)
@@ -48,18 +57,9 @@ class DrillLesson
     private $subTitle;
 
     /**
-     * @var integer
+     * @var \Syllabus
      *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $id;
-
-    /**
-     * @var \AppBundle\Entity\Syllabus
-     *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Syllabus")
+     * @ORM\ManyToOne(targetEntity="Syllabus")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="syllabus_id", referencedColumnName="id")
      * })
@@ -67,5 +67,158 @@ class DrillLesson
     private $syllabus;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return DrillLesson
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set chapter
+     *
+     * @param string $chapter
+     *
+     * @return DrillLesson
+     */
+    public function setChapter($chapter)
+    {
+        $this->chapter = $chapter;
+
+        return $this;
+    }
+
+    /**
+     * Get chapter
+     *
+     * @return string
+     */
+    public function getChapter()
+    {
+        return $this->chapter;
+    }
+
+    /**
+     * Set section
+     *
+     * @param string $section
+     *
+     * @return DrillLesson
+     */
+    public function setSection($section)
+    {
+        $this->section = $section;
+
+        return $this;
+    }
+
+    /**
+     * Get section
+     *
+     * @return string
+     */
+    public function getSection()
+    {
+        return $this->section;
+    }
+
+    /**
+     * Set noOfPeriods
+     *
+     * @param integer $noOfPeriods
+     *
+     * @return DrillLesson
+     */
+    public function setNoOfPeriods($noOfPeriods)
+    {
+        $this->noOfPeriods = $noOfPeriods;
+
+        return $this;
+    }
+
+    /**
+     * Get noOfPeriods
+     *
+     * @return integer
+     */
+    public function getNoOfPeriods()
+    {
+        return $this->noOfPeriods;
+    }
+
+    /**
+     * Set subTitle
+     *
+     * @param string $subTitle
+     *
+     * @return DrillLesson
+     */
+    public function setSubTitle($subTitle)
+    {
+        $this->subTitle = $subTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get subTitle
+     *
+     * @return string
+     */
+    public function getSubTitle()
+    {
+        return $this->subTitle;
+    }
+
+    /**
+     * Set syllabus
+     *
+     * @param \AppBundle\Entity\Syllabus $syllabus
+     *
+     * @return DrillLesson
+     */
+    public function setSyllabus(\AppBundle\Entity\Syllabus $syllabus = null)
+    {
+        $this->syllabus = $syllabus;
+
+        return $this;
+    }
+
+    /**
+     * Get syllabus
+     *
+     * @return \AppBundle\Entity\Syllabus
+     */
+    public function getSyllabus()
+    {
+        return $this->syllabus;
+    }
+}

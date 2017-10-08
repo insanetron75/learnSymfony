@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Detachment" table="detachment">
+    <indexes>
+      <index name="idx_detachment" columns="company_id"/>
+      <index name="idx_detachment_0" columns="contact_information_id"/>
+      <index name="idx_detachment_1" columns="detachment_commander_id"/>
+      <index name="idx_detachment_2" columns="second_in_command_id"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="pk_detachment" columns="id"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="name" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="affiliation" type="string" column="affiliation" length="100" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <many-to-one field="detachmentCommander" target-entity="Instructor" fetch="LAZY">
+      <join-columns>
+        <join-column name="detachment_commander_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="secondInCommand" target-entity="Instructor" fetch="LAZY">
+      <join-columns>
+        <join-column name="second_in_command_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="contactInformation" target-entity="ContactInformation" fetch="LAZY">
+      <join-columns>
+        <join-column name="contact_information_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="company" target-entity="Company" fetch="LAZY">
+      <join-columns>
+        <join-column name="company_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

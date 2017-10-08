@@ -1,0 +1,8 @@
+.syllabus-container {
+    margin: 2% 2% 2% 2%; !important;
+}
+
+.active-filter {
+    border-color: darkgreen; !important;
+    border-width: thick; !important;
+}

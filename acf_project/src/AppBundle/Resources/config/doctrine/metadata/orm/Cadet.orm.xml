@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Cadet" table="cadet">
+    <indexes>
+      <index name="idx_cadet_0" columns="syllabus_id"/>
+      <index name="idx_cadet" columns="detachment_id"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="cadets_id_uindex" columns="id"/>
+      <unique-constraint name="cadets_cdt_fc_matrix_id_uindex" columns="cdt_fc_matrix_id"/>
+      <unique-constraint name="pk_cadet_0" columns="contact_information_id"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="firstName" type="string" column="first_name" length="25" nullable="true">
+      <options>
+        <option name="fixed">1</option>
+      </options>
+    </field>
+    <field name="lastName" type="string" column="last_name" length="25" nullable="true">
+      <options>
+        <option name="fixed">1</option>
+      </options>
+    </field>
+    <field name="rank" type="string" column="rank" length="25" nullable="true">
+      <options>
+        <option name="fixed">1</option>
+      </options>
+    </field>
+    <field name="cdtFcMatrixId" type="integer" column="cdt_fc_matrix_id" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <many-to-one field="syllabus" target-entity="Syllabus" fetch="LAZY">
+      <join-columns>
+        <join-column name="syllabus_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="contactInformation" target-entity="ContactInformation" fetch="LAZY">
+      <join-columns>
+        <join-column name="contact_information_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="detachment" target-entity="Detachment" fetch="LAZY">
+      <join-columns>
+        <join-column name="detachment_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

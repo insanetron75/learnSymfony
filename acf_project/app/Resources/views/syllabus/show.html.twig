@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+{% block javascripts %}
+    {{ parent()}}
+    <script src="{{ asset('js/syllabus/syllabus.js') }}"></script>
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/syllabus/syllabus.css') }}">
+{% endblock %}
+{% block body %}
+    {{ parent() }}
+
+    <div class="syllabus-container">
+        <div class="pull-right">
+            <button type="button" class="btn btn-primary filter-button">Basic <span class="fa fa-filter"></span></button>
+            <button type="button" class="btn btn-primary filter-button">1 Star <span class="fa fa-filter"></span></button>
+            <button type="button" class="btn btn-danger filter-button">2 Star <span class="fa fa-filter"></span></button>
+            <button type="button" class="btn btn-danger filter-button">3 Star <span class="fa fa-filter"></span></button>
+        </div>
+        <h1 class="">{{ title }}:</h1>
+        <table class="syllabus-table table">
+            <tr>
+                {% for heading in lessons['headings'] %}
+                    {% if loop.last %}
+                        <th align="center">{{ heading }}</th>
+                    {% else %}
+                        <th>{{ heading }}</th>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% for lesson in lessons['lessons'] %}
+                <tr>
+                    <td>{{ lesson['Ser'] }}</td>
+                    <td>{{ lesson['Title'] }}</td>
+                    <td>{{ lesson['Sub Title'] }}</td>
+                    <td>{{ lesson['Chapter'] }}</td>
+                    <td>{{ lesson['Section'] }}</td>
+                    <td>{{ lesson['Star Level'] }}</td>
+                    <td>{{ lesson['No. Of Periods'] }}</td>
+                    <td align="center">
+                        <a href="{{ path('admin_cadet_edit',{'id': lesson['id']}) }}" class="btn btn-xs btn-primary">
+                            <span class="fa fa-plus"></span>
+                        </a>
+                        <a href="{{ path('admin_cadet_edit',{'id': lesson['id']}) }}" class="btn btn-xs btn-success">
+                            <span class="fa fa-folder"></span>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

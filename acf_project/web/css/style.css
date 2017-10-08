@@ -6,13 +6,17 @@
 .loginLink {
     float: right;
 }
+
+ul {
+    list-style: none;
+}
 body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
     margin: 0; padding: 0; border: 0;
 }
 
 body {
-    background: #909eab;
-    font-family: Helvetica, sans-serif; font-size: 18px; line-height: 24px;
+    background: #313844;
+    color: white;
 }
 
 nav {
@@ -96,4 +100,13 @@ nav ul ul ul {
     background-color: red;
     color: white;
     text-align: center;
+}
+
+.pull-right {
+    margin-right: 4%;
+}
+
+.page-title {
+    margin-left: 2%;
+    margin-top: 1%;
 }
