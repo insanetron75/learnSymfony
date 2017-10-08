@@ -6,7 +6,6 @@ use AppBundle\Entity\Detachment;
 use AppBundle\Entity\Syllabus;
 use AppBundle\Tools\Detachment\DetachmentRepository;
 use AppBundle\Tools\Syllabus\SyllabusRepository;
-use Doctrine\ORM\EntityRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

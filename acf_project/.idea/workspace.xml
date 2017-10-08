@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f818e96-0c8f-440c-9261-11bf5327c7a8" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="acf_tpbuilder@192.168.0.21" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="CadetFormType.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/CadetFormType.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="464">
+                    <caret line="31" column="21" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="31" selection-end-column="21" />
+                    <folding>
+                      <element signature="e#34#66#0#PHP" expanded="true" />
+                      <element signature="e#1511#1726#0#PHP" expanded="false" />
+                      <element signature="e#1732#1821#0#PHP" expanded="false" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="acf_project" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LessonPlanController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Training/LessonPlanController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="55" column="52" lean-forward="false" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+              <folding>
+                <element signature="e#132#179#0#PHP" expanded="true" />
+                <element signature="e#1328#1343#1#PHP" expanded="true" />
+                <element signature="e#1399#1440#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_cadet.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/new_cadet.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_training_program.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/training/new_training_program.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+              <folding>
+                <marker date="1507491839364" expanded="true" signature="94:468" ph="..." />
+                <marker date="1507491839364" expanded="true" signature="120:457" ph="..." />
+                <marker date="1507491839364" expanded="true" signature="156:442" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LessonPlanFormType.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/Training/LessonPlanFormType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#126#166#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CadetAdminController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Admin/CadetAdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <folding>
+                <element signature="e#138#179#0#PHP" expanded="true" />
+                <element signature="e#2142#2170#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/syllabus/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="40" column="57" lean-forward="false" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+              <folding>
+                <marker date="1507492245371" expanded="true" signature="289:2316" ph="{% block body ...%}" />
+                <marker date="1507492245371" expanded="true" signature="1328:2273" ph="{% for lesson in lessons['lessons'] ...%}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showAll.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/syllabus/showAll.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="44" column="36" lean-forward="false" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>btn</find>
+      <find>fa-lo</find>
+      <find>fa-lock</find>
+      <find>width</find>
+      <find>font-s</find>
+      <find>prof</find>
+      <find>h</find>
+      <find>qualifi</find>
+      <find>detachment</find>
+      <find>detachmentId</find>
+      <find>getdetach</find>
+      <find>getfir</find>
+      <find>instructor_id</find>
+      <find>getr</find>
+      <find>usertool</find>
+      <find>getRol</find>
+      <find>user</find>
+      <find>getdeta</find>
+      <find>lessonType</find>
+      <find>table</find>
+      <find>lesson pla</find>
+      <find>edita</find>
+      <find>data_class</find>
+      <find>cadets</find>
+      <find>jQuery(this)</find>
+      <find>delete</find>
+      <find>instru</find>
+      <find>lessonTyp</find>
+      <find>london</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>instructor</replace>
+      <replace>Instructor</replace>
+      <replace>buttonElm</replace>
+      <replace>lesson</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Timmy\Documents\learnSymfony\acf_project\src</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tools/Detachment/Tools.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/index/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tools/Instructor/Tools.php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tools/User/UserRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tools/Instructor/InstructorManager.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tools/Detachment/DetachmentRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tools/Instructor/InstructorRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/UnitController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/unit/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tools/User/UserInstance.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tools/User/Tools.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/Training/LessonController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/lesson/show.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/js/jquery.min.js" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Detachment.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/Admin/CadetAdminController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/admin/edit_cadet.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/admin/new_cadet.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/cadet/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/instructor/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/admin/new_instructor.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/admin/edit_instructor.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/Admin/InstructorAdminController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/InstructorFormType.php" />
+        <option value="$PROJECT_DIR$/web/js/syllabus/syllabus.js" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/CadetController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/InstructorController.php" />
+        <option value="$PROJECT_DIR$/web/css/syllabus/syllabus.css" />
+        <option value="$PROJECT_DIR$/web/css/instructor/instructor.css" />
+        <option value="$PROJECT_DIR$/web/css/cadet/cadet.css" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.sql" />
+        <option value="$PROJECT_DIR$/app/Resources/views/personnel/instructor/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/personnel/cadet/show.html.twig" />
+        <option value="$PROJECT_DIR$/build-entities.sh" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Instructor.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Syllabus.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/SyllabusController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Lesson.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/syllabus/showAll.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/training/new_training_program.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/CadetFormType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/Training/LessonPlanFormType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/Training/LessonPlanController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/syllabus/show.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acf_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acf_project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acf_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acf_project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acf_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acf_project" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="MySQL" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="syllabus/show&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/syllabus/show.html.twig&#10;cadet/show&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/personnel/cadet/show.html.twig&#10;scra&#9;FILE&#9;file://C:/Users/Timmy/.PhpStorm2016.3/config/scratches/scratch_2.sql&#10;instructor/sho&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/personnel/instructor/show.html.twig&#10;routing.ym&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/config/routing.yml&#10;instructorcon&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/InstructorController.php&#10;cadetcontr&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/CadetController.php&#10;scrat&#9;FILE&#9;file://C:/Users/Timmy/.PhpStorm2016.3/config/scratches/scratch_2.sql&#10;base&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/base.html.twig&#10;syl&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/web/css/syllabus/syllabus.css&#10;instructorad&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/Admin/InstructorAdminController.php&#10;instructorfor&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Form/InstructorFormType.php&#10;cadet/sho&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/cadet/show.html.twig&#10;cadet&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/Admin/CadetAdminController.php&#10;cadetcont&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/CadetController.php&#10;cadetcon&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/Admin/CadetAdminController.php&#10;cadetad&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/Admin/CadetAdminController.php&#10;style&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/web/css/style.css&#10;cadetco&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/CadetController.php&#10;show&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/syllabus/show.html.twig&#10;lesson&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Entity/Lesson.php&#10;lessontyp&#9;null&#9;null&#10;loginau&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Security/LoginFormAuthenticator.php&#10;BASE&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/base.html.twig&#10;SHOW&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/index/show.html.twig&#10;login&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Security/LoginFormAuthenticator.php&#10;user&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Entity/User.php&#10;detach&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Entity/Detachment.php&#10;index/show&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/index/show.html.twig&#10;inde&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/IndexController.php&#10;instru&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Entity/Instructor.php&#10;home&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/web/css/home/home.css&#10;indexcon&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/IndexController.php&#10;index&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/IndexController.php&#10;securitycon&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/SecurityController.php&#10;loginfor&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Security/LoginFormAuthenticator.php&#10;home.cs&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/web/css/home/home.css&#10;rout&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/config/routing.yml&#10;tables&#9;null&#9;null&#10;security.y&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/config/security.yml&#10;logintw&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/Resources/views/security/login.html.twig&#10;appke&#9;null&#9;null&#10;styles&#9;FILE&#9;file://C:/Users/Timmy/AppData/Local/Temp/Rar$DIa0.465/styles.css&#10;config_de&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/app/config/config_dev.yml&#10;logincont&#9;null&#9;null&#10;loginc&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/web/css/login/login.css&#10;loginformau&#9;null&#9;null&#10;logincss&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/web/css/login/login.css&#10;loginfo&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Form/LoginForm.php&#10;securi&#9;FILE&#9;file://C:/Users/Timmy/Documents/learnSymfony/acf_project/src/AppBundle/Controller/SecurityController.php" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GitHub" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Timmy\Documents\learnSymfony\acf_project\app\Resources\views\admin" />
+      <recent name="C:\Users\Timmy\Documents\learnSymfony\acf_project\web\css\cadet" />
+      <recent name="C:\Users\Timmy\Documents\learnSymfony\acf_project\web\css\instructor" />
+      <recent name="C:\Users\Timmy\Documents\learnSymfony\acf_project\src\AppBundle\Form" />
+      <recent name="C:\Users\Timmy\Documents\learnSymfony\acf_project\web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Timmy\Documents\learnSymfony\acf_project\app\Resources\views\personnel" />
+      <recent name="C:\Users\Timmy\Documents\learnSymfony\acf_project\web\css" />
+      <recent name="C:\Users\Timmy\Documents\learnSymfony\acf_project\src\AppBundle\Home" />
+      <recent name="C:\Users\Timmy\Documents\learnSymfony\acf_project\src\AppBundle\Controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f818e96-0c8f-440c-9261-11bf5327c7a8" name="Default" comment="" />
+      <created>1507241379381</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1507241379381</updated>
+      <workItem from="1507241381178" duration="27000" />
+      <workItem from="1507241419016" duration="293000" />
+      <workItem from="1507241723572" duration="4165000" />
+      <workItem from="1507245901566" duration="9893000" />
+      <workItem from="1507260656304" duration="19528000" />
+      <workItem from="1507386418764" duration="25786000" />
+      <workItem from="1507470214733" duration="7649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="67341000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26012793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26012793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Tools/User/UserInstance.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Cadet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="208" column="27" lean-forward="false" selection-start-line="208" selection-start-column="20" selection-end-line="208" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/lesson/show.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Training/LessonController.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/LessonType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="111" column="1" lean-forward="false" selection-start-line="111" selection-start-column="1" selection-end-line="111" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/home/home.js" />
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="3" column="21438" lean-forward="false" selection-start-line="3" selection-start-column="21438" selection-end-line="3" selection-end-column="21438" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.501/GenusFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Tools/Syllabus/SyllabusRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.579/SubFamilyRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.355/SubFamily.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/ControllerTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="330" column="59" lean-forward="false" selection-start-line="330" selection-start-column="59" selection-end-line="330" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/new_instructor.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/edit_cadet.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/edit_instructor.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/login/login.js" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="91" column="4" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="59" />
+          <folding>
+            <element signature="e#564#573#0#Twig" expanded="true" />
+            <element signature="e#711#727#0#Twig" expanded="true" />
+            <element signature="e#835#846#0#Twig" expanded="true" />
+            <element signature="e#1235#1248#0#Twig" expanded="true" />
+            <element signature="e#1368#1385#0#Twig" expanded="true" />
+            <element signature="e#1606#1623#0#Twig" expanded="true" />
+            <element signature="e#1843#1860#0#Twig" expanded="true" />
+            <element signature="e#2627#2642#0#Twig" expanded="true" />
+            <element signature="e#2838#2853#0#Twig" expanded="true" />
+            <element signature="e#3106#3120#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/syllabus/syllabus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="68" column="9" lean-forward="false" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LessonPlanController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/InstructorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#39#66#0#PHP" expanded="false" />
+            <element signature="e#541#578#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/syllabus/syllabus.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/instructor/instructor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/cadet/cadet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/InstructorFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Admin/InstructorAdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="false" />
+            <element signature="e#138#184#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/personnel/instructor/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="36" column="68" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/personnel/cadet/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="32" column="68" lean-forward="false" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/index/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build-entities.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Tools/User/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="12" column="69" lean-forward="false" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Instructor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="81" lean-forward="false" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Detachment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6757">
+          <caret line="233" column="4" lean-forward="false" selection-start-line="233" selection-start-column="4" selection-end-line="236" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Syllabus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/SyllabusController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="95" column="50" lean-forward="false" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Lesson.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="258" column="39" lean-forward="false" selection-start-line="258" selection-start-column="39" selection-end-line="258" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CadetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding>
+            <element signature="e#39#66#0#PHP" expanded="false" />
+            <element signature="e#483#515#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/syllabus/showAll.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="44" column="36" lean-forward="false" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/new_cadet.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/training/new_training_program.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <marker date="1507491839364" expanded="true" signature="94:468" ph="..." />
+            <marker date="1507491839364" expanded="true" signature="120:457" ph="..." />
+            <marker date="1507491839364" expanded="true" signature="156:442" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/CadetFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="31" column="21" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="e#34#66#0#PHP" expanded="true" />
+            <element signature="e#1511#1726#0#PHP" expanded="false" />
+            <element signature="e#1732#1821#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Training/LessonPlanController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="55" column="52" lean-forward="false" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+          <folding>
+            <element signature="e#132#179#0#PHP" expanded="true" />
+            <element signature="e#1328#1343#1#PHP" expanded="true" />
+            <element signature="e#1399#1440#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/syllabus/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="40" column="57" lean-forward="false" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+          <folding>
+            <marker date="1507492245371" expanded="true" signature="289:2316" ph="{% block body ...%}" />
+            <marker date="1507492245371" expanded="true" signature="1328:2273" ph="{% for lesson in lessons['lessons'] ...%}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Admin/CadetAdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="e#138#179#0#PHP" expanded="true" />
+            <element signature="e#2142#2170#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/Training/LessonPlanFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#126#166#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

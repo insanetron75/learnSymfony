@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Lesson
  *
- * @ORM\Table(name="lesson", uniqueConstraints={@ORM\UniqueConstraint(name="fieldcraft_lessons_id_uindex", columns={"id"})}, indexes={@ORM\Index(name="fieldcraft_lessons_syllabus_id_fk", columns={"syllabus_id"}), @ORM\Index(name="idx_lesson", columns={"type_id"})})
+ * @ORM\Table(name="lesson", uniqueConstraints={@ORM\UniqueConstraint(name="fieldcraft_lessons_id_uindex", columns={"id"})}, indexes={@ORM\Index(name="fieldcraft_lessons_syllabus_id_fk", columns={"syllabus_id"}), @ORM\Index(name="idx_lesson", columns={"lesson_type_id"})})
  * @ORM\Entity
  */
 class Lesson
@@ -68,10 +68,10 @@ class Lesson
      *
      * @ORM\ManyToOne(targetEntity="LessonType")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="type_id", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="lesson_type_id", referencedColumnName="id")
      * })
      */
-    private $type;
+    private $lessonType;
 
     /**
      * @var \Syllabus
@@ -240,27 +240,27 @@ class Lesson
     }
 
     /**
-     * Set type
+     * Set lessonType
      *
-     * @param \AppBundle\Entity\LessonType $type
+     * @param \AppBundle\Entity\LessonType $lessonType
      *
      * @return Lesson
      */
-    public function setType(\AppBundle\Entity\LessonType $type = null)
+    public function setLessonType(\AppBundle\Entity\LessonType $lessonType = null)
     {
-        $this->type = $type;
+        $this->lessonType = $lessonType;
 
         return $this;
     }
 
     /**
-     * Get type
+     * Get lessonType
      *
      * @return \AppBundle\Entity\LessonType
      */
-    public function getType()
+    public function getLessonType()
     {
-        return $this->type;
+        return $this->lessonType;
     }
 
     /**

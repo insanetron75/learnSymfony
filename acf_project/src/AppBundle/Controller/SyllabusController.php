@@ -2,8 +2,6 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\DrillLesson;
-use AppBundle\Entity\FieldcraftLesson;
 use AppBundle\Entity\Lesson;
 use AppBundle\Entity\LessonType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -93,7 +91,7 @@ class SyllabusController extends Controller
 
         $em = $this->getDoctrine()->getManager();
         if ($lessonType) {
-            $lessons = $em->getRepository(Lesson::class)->findBy(['type' => $lessonType]);
+            $lessons = $em->getRepository(Lesson::class)->findBy(['lessonType' => $lessonType]);
         } else {
             $lessons = $em->getRepository(Lesson::class)->findAll();
         }

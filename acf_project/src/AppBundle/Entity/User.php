@@ -10,7 +10,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * User
  *
  * @ORM\Table(name="user", uniqueConstraints={@ORM\UniqueConstraint(name="user_name_UNIQUE", columns={"user_name"})}, indexes={@ORM\Index(name="fk_user", columns={"instructor_id"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Tools\User\UserRepository")
  */
 class User implements UserInterface
 {
