@@ -10,4 +10,10 @@ class SyllabusRepository extends EntityRepository
         return $this->createQueryBuilder('syllabus')
             ->orderBy('syllabus.name', 'ASC');
     }
+
+    public function createIdlQueryBuilder()
+    {
+        return $this->createQueryBuilder('syllabus')
+                    ->orderBy('syllabus.id', 'ASC');
+    }
 }

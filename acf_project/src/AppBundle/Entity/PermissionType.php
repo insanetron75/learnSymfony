@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * PermissionType
  *
  * @ORM\Table(name="permission_type", uniqueConstraints={@ORM\UniqueConstraint(name="pk_permission_type", columns={"id"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Tools\Training\PermissionTypeRepository")
  */
 class PermissionType
 {
@@ -62,5 +62,10 @@ class PermissionType
     public function getName()
     {
         return $this->name;
+    }
+
+    public function __toString()
+    {
+        return $this->getName();
     }
 }

@@ -9,6 +9,7 @@
 namespace AppBundle\Controller\Training;
 
 
+use AppBundle\Entity\Lesson;
 use AppBundle\Form\Training\LessonPlanFormType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -36,28 +37,35 @@ class LessonPlanController extends Controller
     public function newAction(Request $request)
     {
         $form = $this->createForm(LessonPlanFormType::class);
-
         // only handles data on POST
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid())
         {
-            $lessonPlan = $form->getData();
-
+            $lessonId = $request->query->get('lessonId');
             $em = $this->getDoctrine()->getManager();
+            $lesson = $em->getRepository(Lesson::class)->findOneBy(['id' => $lessonId]);
+            $lessonPlan = $form->getData();
+            $lessonPlan->setLesson($lesson);
             $em->persist($lessonPlan);
             $em->flush();
 
             $this->addFlash('success', 'Lesson Plan Created');
 
             return $this->redirectToRoute('syllabus_home');
+        } else
+        {
+            $lessonId = $request->query->get('lessonId');
+            $em = $this->getDoctrine()->getManager();
+            $lesson = $em->getRepository(Lesson::class)->findOneBy(['id' => $lessonId]);
+            $lessonTitle = $lesson->__toString();
+            return $this->render(
+                'training/new_training_program.html.twig',
+                [
+                    'title' => $lessonTitle,
+                    'form' => $form->createView()
+                ]
+            );
         }
-
-        return $this->render(
-            'training/new_training_program.html.twig',
-            [
-                'form' => $form->createView()
-            ]
-        );
     }
 
     /**

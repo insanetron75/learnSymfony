@@ -37,7 +37,7 @@
                             <td>{{ lesson['Star Level'] }}</td>
                             <td>{{ lesson['No. Of Periods'] }}</td>
                             <td align="center">
-                                <a href="{{ path('edit_lesson_plan',{'id': lesson['id']}) }}" class="btn btn-xs btn-primary">
+                                <a href="{{ path('new_lesson_plan',{'lessonId': lesson['id']}) }}" class="btn btn-xs btn-primary">
                                     <span class="fa fa-plus"></span>
                                 </a>
                                 <a href="{{ path('lesson_plan_home') }}" class="btn btn-xs btn-success">

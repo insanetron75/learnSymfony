@@ -258,4 +258,9 @@ class Instructor
     {
         return $this->detachment;
     }
+
+    public function __toString()
+    {
+        return $this->getNumber() . ': ' . $this->getFirstName() . ' ' . $this->getLastName();
+    }
 }

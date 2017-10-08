@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Lesson
  *
  * @ORM\Table(name="lesson", uniqueConstraints={@ORM\UniqueConstraint(name="fieldcraft_lessons_id_uindex", columns={"id"})}, indexes={@ORM\Index(name="fieldcraft_lessons_syllabus_id_fk", columns={"syllabus_id"}), @ORM\Index(name="idx_lesson", columns={"lesson_type_id"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Tools\Training\LessonRepository")
  */
 class Lesson
 {
@@ -285,5 +285,10 @@ class Lesson
     public function getSyllabus()
     {
         return $this->syllabus;
+    }
+
+    public function __toString()
+    {
+        return $this->getTitle() . ': ' . $this->getSubTitle();
     }
 }
