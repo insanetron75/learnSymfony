@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/training/lessonPlans.css') }}">
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="plans-container">
+        <div class="pull-right">
+            <a href="{{ path('new_lesson_plan',{'lessonId': lessonId}) }}" class="btn btn-primary pull-right">Add <span class="fa fa-plus-circle"></span></a>
+        </div>
+        <h1 class="page-title">{{ title }}</h1>
+        <table class="table">
+            <tr>
+                {% for heading in plans['headings'] %}
+                    <th>{{ heading }}</th>
+                {% endfor %}
+            </tr>
+            {% for plan in plans['plans'] %}
+                <tr>
+                    <td>{{ plan['Instructor'] }}</td>
+                    <td>{{ plan['Date'] }}</td>
+                    <td>{{ plan['No. Of Periods'] }}</td>
+                    <td>{{ plan['Length'] }}</td>
+                    <td>
+                        <a href="{{ path('view_lesson_plan', {'id': plan['id']}) }}"
+                           class="btn btn-xs btn-success"><span class="fa fa-file-pdf-o"></span></a>
+                        <a href="{{ path('edit_lesson_plan', {'id': plan['id']}) }}"
+                           class="btn btn-xs btn-warning"><span class="fa fa-pencil"></span></a>
+                        <a href="{{ path('delete_lesson_plan', {'id': plan['id']}) }}"
+                           onclick="return confirm('Are you sure?')"
+                           class="btn btn-xs btn-danger"><span class="fa fa-close"></span></a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

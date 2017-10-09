@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use AppBundle\Tools\Instructor\Tools;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -261,6 +262,9 @@ class Instructor
 
     public function __toString()
     {
-        return $this->getNumber() . ': ' . $this->getFirstName() . ' ' . $this->getLastName();
+        return $this->getNumber() . ': ' .
+            Tools::convertRankToShortHand($this) . ' ' .
+            $this->getFirstName() . ' ' .
+            $this->getLastName();
     }
 }

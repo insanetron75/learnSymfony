@@ -41,7 +41,7 @@
                         <a href="{{ path('new_lesson_plan',{'lessonId': lesson['id']}) }}" class="btn btn-xs btn-primary">
                             <span class="fa fa-plus"></span>
                         </a>
-                        <a href="{{ path('lesson_plan_home') }}" class="btn btn-xs btn-success">
+                        <a href="{{ path('lesson_plan_home', {'lessonId': lesson['id']}) }}" class="btn btn-xs btn-success">
                             <span class="fa fa-folder"></span>
                         </a>
                     </td>

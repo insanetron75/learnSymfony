@@ -3,5 +3,11 @@
   <component name="Symfony2PluginSettings">
     <option name="pluginEnabled" value="true" />
     <option name="profilerCsvPath" value="" />
+    <option name="twigNamespaces">
+      <list>
+        <twig_namespace custom="true" namespaceType="ADD_PATH" path="app/Resources/views" />
+        <twig_namespace custom="true" namespaceType="BUNDLE" path="app/Resources/Views" />
+      </list>
+    </option>
   </component>
 </project>
