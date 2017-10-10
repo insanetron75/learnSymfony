@@ -1,18 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Timmy
- * Date: 08/10/2017
- * Time: 19:14
- */
 
 namespace AppBundle\Controller\Training;
-
 
 use AppBundle\Entity\Lesson;
 use AppBundle\Entity\LessonPlan;
 use AppBundle\Form\Training\LessonPlanFormType;
-use Knp\Bundle\SnappyBundle\Snappy\Response\PdfResponse;
+use AppBundle\Pdf\LessonPlanPdf;
+use FPDF;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -22,15 +16,15 @@ class LessonPlanController extends Controller
 {
 
     /**
-     * @param $lessonId
-     * @Route("/lessonPlan/{lessonId}", name="lesson_plan_home")
+     * @param Request $request
+     * @Route("/lessonPlan", name="lesson_plan_home")
      *
      * @return Response
      */
-    public function showAction($lessonId)
+    public function showAction(Request $request)
     {
-        $em = $this->getDoctrine()->getManager();
-
+        $lessonId = $request->query->get('lessonId');
+        $em       = $this->getDoctrine()->getManager();
         // First get the lesson
         $lesson = $em->getRepository(Lesson::class)->findOneBy(['id' => $lessonId]);
 
@@ -71,7 +65,7 @@ class LessonPlanController extends Controller
 
             $this->addFlash('success', 'Lesson Plan Created');
 
-            return $this->redirectToRoute($this->generateUrl('lesson_plan_home', ['lessonId' => $lessonPlan->getLesson()->getId()]));
+            return $this->showAction($request);
         }
         else
         {
@@ -85,7 +79,7 @@ class LessonPlanController extends Controller
                 [
                     'title'    => $lessonTitle,
                     'form'     => $form->createView(),
-                    'lessonId' => $lessonId
+                    'lesson' => $lessonId
                 ]
             );
         }
@@ -101,27 +95,36 @@ class LessonPlanController extends Controller
     public function editAction(Request $request, LessonPlan $lessonPlan)
     {
         $form = $this->createForm(LessonPlanFormType::class, $lessonPlan);
-
         // only handles data on POST
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid())
         {
-            $cadet = $form->getData();
-
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($cadet);
+            $lessonId   = $request->query->get('lessonId');
+            $em         = $this->getDoctrine()->getManager();
+            $lesson     = $em->getRepository(Lesson::class)->findOneBy(['id' => $lessonId]);
+            $lessonPlan = $form->getData();
+            $lessonPlan->setLesson($lesson);
+            $em->persist($lessonPlan);
             $em->flush();
 
-            $this->addFlash('success', 'Plan Updated');
-        }
+            $this->addFlash('success', 'Lesson Plan Edited');
 
-        return $this->redirect(
-            $this->generateUrl(
-                'lesson_plan_home',
+            return $this->showAction($request);
+        }
+        else
+        {
+            $lesson      = $lessonPlan->getLesson();
+            $lessonTitle = $lesson->__toString();
+
+            return $this->render(
+                'training/newPlan.html.twig',
                 [
-                    'lessonId' => $lessonPlan->getLesson()->getId()
+                    'title'    => $lessonTitle,
+                    'form'     => $form->createView(),
+                    'lessonId' => $lesson->getId()
                 ]
-            ));
+            );
+        }
     }
 
     /**
@@ -133,12 +136,11 @@ class LessonPlanController extends Controller
      */
     public function viewAction(Request $request, LessonPlan $lessonPlan)
     {
-        $view = $this->renderView('pdfs\viewLessonPlan.html.twig');;
-        return $this->render('pdfs\viewLessonPlan.html.twig');
-        /*return new PdfResponse(
-            $this->get('knp_snappy.pdf')->getOutputFromHtml($view),
-            'file.pdf'
-        );*/
+        $pdf = new LessonPlanPdf($lessonPlan);
+        $pdf->build();
+
+        return new Response($pdf->Output(), 200, array(
+            'Content-Type' => 'application/pdf'));
     }
 
     /**
@@ -191,7 +193,8 @@ class LessonPlanController extends Controller
                 'Date'           => date('d/m/Y', $thisLessonPlan->getTimestamp()),
                 'No. Of Periods' => $thisLessonPlan->getPeriodCount(),
                 'Length'         => $thisLessonPlan->getLength(),
-                'id'             => $thisLessonPlan->getId()
+                'id'             => $thisLessonPlan->getId(),
+                'lessonId'       => $thisLessonPlan->getLesson()->getId()
             ];
         }
 

@@ -289,6 +289,11 @@ class Lesson
 
     public function __toString()
     {
-        return $this->getTitle() . ': ' . $this->getSubTitle();
+        if ($this->getSubTitle())
+        {
+            return $this->getTitle() . ': ' . $this->getSubTitle();
+        } else {
+            return $this->getTitle();
+        }
     }
 }

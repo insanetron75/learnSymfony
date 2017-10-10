@@ -27,7 +27,7 @@
                     <td>
                         <a href="{{ path('view_lesson_plan', {'id': plan['id']}) }}"
                            class="btn btn-xs btn-success"><span class="fa fa-file-pdf-o"></span></a>
-                        <a href="{{ path('edit_lesson_plan', {'id': plan['id']}) }}"
+                        <a href="{{ path('edit_lesson_plan', {'id': plan['id'], lessonId: plan['lessonId']}) }}"
                            class="btn btn-xs btn-warning"><span class="fa fa-pencil"></span></a>
                         <a href="{{ path('delete_lesson_plan', {'id': plan['id']}) }}"
                            onclick="return confirm('Are you sure?')"
