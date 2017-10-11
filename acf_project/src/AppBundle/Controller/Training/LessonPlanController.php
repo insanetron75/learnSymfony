@@ -6,7 +6,6 @@ use AppBundle\Entity\Lesson;
 use AppBundle\Entity\LessonPlan;
 use AppBundle\Form\Training\LessonPlanFormType;
 use AppBundle\Pdf\LessonPlanPdf;
-use FPDF;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;

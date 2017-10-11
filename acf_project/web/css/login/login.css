@@ -12,3 +12,7 @@ input {
 .btn {
     margin-top: 5px;
 }
+
+.reg-form {
+    display: block;
+}

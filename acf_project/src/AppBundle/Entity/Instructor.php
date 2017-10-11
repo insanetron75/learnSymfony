@@ -262,7 +262,8 @@ class Instructor
 
     public function __toString()
     {
-        return Tools::convertRankToShortHand($this) . ' ' .
+        return $this->getNumber() .
+            Tools::convertRankToShortHand($this) . ' ' .
             $this->getFirstName() . ' ' .
             $this->getLastName();
     }

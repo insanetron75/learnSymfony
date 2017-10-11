@@ -15,6 +15,10 @@ class InstructorController extends Controller
      */
     public function showAction()
     {
+        if (!$this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
+            throw $this->createAccessDeniedException();
+        }
+
         $instructors = $this->buildInstructorDetails();
 
         return $this->render(

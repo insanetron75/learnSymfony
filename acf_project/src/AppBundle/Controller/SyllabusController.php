@@ -18,6 +18,10 @@ class SyllabusController extends Controller
      */
     public function showAllAction()
     {
+        if (!$this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
+            throw $this->createAccessDeniedException();
+        }
+
         $syllabus = $this->buildSyllabusDetails();
         return $this->render(
             'syllabus/showAll.html.twig',
@@ -36,6 +40,10 @@ class SyllabusController extends Controller
      */
     public function showAction($syllabusName)
     {
+        if (!$this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
+            throw $this->createAccessDeniedException();
+        }
+
         /** @var LessonType $lessonType */
         $lessonType = $this->getDoctrine()->getRepository(LessonType::class)
             ->findOneBy(['url' => $syllabusName]);

@@ -14,6 +14,10 @@ class CadetController extends Controller
      */
     public function showAction()
     {
+        if (!$this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
+            throw $this->createAccessDeniedException();
+        }
+
         $cadets = $this->buildCadetDetails();
 
         return $this->render(

@@ -28,13 +28,11 @@ class IndexController extends Controller
             throw $this->createAccessDeniedException();
         }
 
-        // the above is a shortcut for this
         $sfUsr = $this->get('security.token_storage')->getToken()->getUser();
         $em    = $this->getDoctrine()->getManager();
         $users = $em->getRepository(User::class);
 
         /** @var User $thisUser */
-        //$thisUser = $users->findOneBy(['userName' => $sfUsr->getUserName()]);
         $thisUser = $users->findOneBy(['userName' => $sfUsr->getUserName()]);
 
         $thisInstructor = $thisUser->getInstructor();
@@ -65,10 +63,6 @@ class IndexController extends Controller
                 'detachmentDetails' => $detachmentDetails
             ]
         );
-    }
-
-    public function getDetachmentDetails(ContainerInterface $container = null)
-    {
     }
 
 }

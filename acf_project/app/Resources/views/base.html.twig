@@ -53,7 +53,7 @@
                 </li>
                 {% if is_granted('ROLE_USER') %}
                     <li class="loginLink">
-                        <a href="">Account <span class="fa fa-user"></span></a>
+                        <a href="{{ path('account_home') }}">Account <span class="fa fa-user"></span></a>
                         <ul>
                             {% if is_granted('ROLE_DETACHMENT_2IC') %}
                                 <li><a href="{{ path('unit_management') }}">Unit <span
