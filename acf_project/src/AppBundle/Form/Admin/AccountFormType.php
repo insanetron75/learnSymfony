@@ -22,9 +22,7 @@ class AccountFormType extends AbstractType
                     'first_options'   => array('label' => 'Password'),
                     'second_options'  => array('label' => 'Repeat Password'),
                 ))
-                ->add('instructor')
-                ->add('det_commander', CheckboxType::class, ['label' => 'Detachment Commander'])
-                ->add('det_2ic', CheckboxType::class, ['label' => 'Detachment 2IC']);
+                ->add('instructor');
 
     }
 

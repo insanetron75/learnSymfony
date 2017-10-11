@@ -54,7 +54,7 @@ class User implements UserInterface
     /**
      * @var \Instructor
      *
-     * @ORM\ManyToOne(targetEntity="Instructor")
+     * @ORM\OneToOne(targetEntity="Instructor")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="instructor_id", referencedColumnName="id")
      * })
